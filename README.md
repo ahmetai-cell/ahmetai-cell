@@ -63,10 +63,10 @@ class AhmetDemir:
 
 | Project | Description | Stack |
 |--------|-------------|-------|
-| 🏪 **[PartsExpress-MX](https://github.com/ahmetai-cell/e--ticaret)** | AI-powered e-commerce platform with intelligent product recommendations | TypeScript · Next.js · Node.js · Redis · AI |
-| 🚌 **[KentKart Enterprise](https://github.com/ahmetai-cell/kentkart_enterprise)** | AI anomaly detection system for smart city transit networks | Python · ML · Time-Series Analysis |
-| 🔐 **[Swiss CyberSec Journey](https://github.com/ahmetai-cell/Swiss-CyberSec-Journey)** | Cybersecurity research, CTF writeups & penetration testing notes | Security · CTF · Offensive |
-| 🐾 **[Veteriner Klinik](https://github.com/ahmetai-cell/veterinerklinik)** | Full-stack veterinary clinic management system | TypeScript · Next.js · Prisma |
+| 🏪 **[PartsExpress-MX](https://github.com/ahmetai-cell/partsexpress-mx)** | AI-powered e-commerce platform with intelligent product recommendations | TypeScript · Next.js · Node.js · Redis · AI |
+| 🚌 **[KentKart Enterprise](https://github.com/ahmetai-cell/transit-ai-anomaly)** | AI anomaly detection system for smart city transit networks | Python · ML · Time-Series Analysis |
+| 🔐 **[Swiss CyberSec Journey](https://github.com/ahmetai-cell/cybersec-research)** | Cybersecurity research, CTF writeups & penetration testing notes | Security · CTF · Offensive |
+| 🐾 **[Veteriner Klinik](https://github.com/ahmetai-cell/vet-clinic-management)** | Full-stack veterinary clinic management system | TypeScript · Next.js · Prisma |
 
 </div>
 
