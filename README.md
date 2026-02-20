@@ -67,6 +67,9 @@
 
 <div align="center">
 
+<a href="https://github.com/ahmetai-cell/pneumothorax-ai-detection">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=ahmetai-cell&repo=pneumothorax-ai-detection&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&border_radius=10" />
+</a>
 <a href="https://github.com/ahmetai-cell/cybersec-research">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=ahmetai-cell&repo=cybersec-research&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=39ff14&icon_color=39ff14&border_radius=10" />
 </a>
