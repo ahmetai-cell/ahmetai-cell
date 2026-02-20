@@ -1,0 +1,236 @@
+<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+
+      .bg { fill: #0d1117; }
+      .grid-line { stroke: #1a2332; stroke-width: 0.5; }
+
+      /* Matrix columns */
+      .matrix-col { font-family: 'JetBrains Mono', monospace; font-size: 13px; fill: #00ff41; opacity: 0; }
+      .mc1 { animation: fall1 4s linear infinite; animation-delay: 0s; }
+      .mc2 { animation: fall1 5s linear infinite; animation-delay: 0.7s; }
+      .mc3 { animation: fall1 3.5s linear infinite; animation-delay: 1.4s; }
+      .mc4 { animation: fall1 4.8s linear infinite; animation-delay: 0.3s; }
+      .mc5 { animation: fall1 4.2s linear infinite; animation-delay: 2.1s; }
+      .mc6 { animation: fall1 5.5s linear infinite; animation-delay: 0.9s; }
+      .mc7 { animation: fall1 3.8s linear infinite; animation-delay: 1.8s; }
+      .mc8 { animation: fall1 4.5s linear infinite; animation-delay: 0.5s; }
+      .mc9 { animation: fall1 5.2s linear infinite; animation-delay: 2.5s; }
+      .mc10 { animation: fall1 3.2s linear infinite; animation-delay: 1.1s; }
+      .mc11 { animation: fall1 4.7s linear infinite; animation-delay: 0.2s; }
+      .mc12 { animation: fall1 5.8s linear infinite; animation-delay: 1.6s; }
+
+      @keyframes fall1 {
+        0%   { opacity: 0; transform: translateY(-280px); }
+        10%  { opacity: 0.8; }
+        80%  { opacity: 0.3; }
+        100% { opacity: 0; transform: translateY(280px); }
+      }
+
+      /* Scanline */
+      .scanline {
+        fill: none;
+        stroke: rgba(0,212,255,0.04);
+        stroke-width: 2;
+        animation: scan 3s linear infinite;
+      }
+      @keyframes scan {
+        0%   { transform: translateY(-10px); }
+        100% { transform: translateY(290px); }
+      }
+
+      /* Glow border */
+      .border-glow {
+        fill: none;
+        stroke-width: 1.5;
+        animation: borderPulse 3s ease-in-out infinite;
+      }
+      .border-top    { stroke: #00d4ff; animation: borderPulse 3s ease-in-out infinite; }
+      .border-bottom { stroke: #39ff14; animation: borderPulse 3s ease-in-out infinite 1.5s; }
+      @keyframes borderPulse {
+        0%, 100% { opacity: 0.4; }
+        50%       { opacity: 1; }
+      }
+
+      /* Corner brackets */
+      .corner { stroke: #00d4ff; stroke-width: 2; fill: none; }
+      .corner-g { stroke: #39ff14; stroke-width: 2; fill: none; }
+
+      /* Main name */
+      .name-shadow {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 58px;
+        font-weight: 700;
+        fill: #001a2e;
+        letter-spacing: 4px;
+      }
+      .name-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 58px;
+        font-weight: 700;
+        fill: url(#nameGrad);
+        letter-spacing: 4px;
+        filter: url(#glow);
+        animation: nameGlow 3s ease-in-out infinite;
+      }
+      @keyframes nameGlow {
+        0%, 100% { filter: url(#glow); opacity: 1; }
+        50%       { filter: url(#glowStrong); opacity: 0.95; }
+      }
+
+      /* Subtitle */
+      .subtitle {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 15px;
+        font-weight: 400;
+        fill: #58a6ff;
+        letter-spacing: 3px;
+        animation: subtitleFade 4s ease-in-out infinite;
+      }
+      @keyframes subtitleFade {
+        0%, 100% { opacity: 0.7; }
+        50%       { opacity: 1; }
+      }
+
+      /* Tags */
+      .tag-ai   { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #00d4ff; animation: tagBlink1 2.5s ease-in-out infinite; }
+      .tag-sec  { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #39ff14; animation: tagBlink1 2.5s ease-in-out infinite 0.8s; }
+      .tag-ctf  { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #ff6b6b; animation: tagBlink1 2.5s ease-in-out infinite 1.6s; }
+      .tag-box-ai  { fill: rgba(0,212,255,0.08); stroke: #00d4ff; stroke-width: 1; rx: 4; animation: tagBlink1 2.5s ease-in-out infinite; }
+      .tag-box-sec { fill: rgba(57,255,20,0.08);  stroke: #39ff14; stroke-width: 1; animation: tagBlink1 2.5s ease-in-out infinite 0.8s; }
+      .tag-box-ctf { fill: rgba(255,107,107,0.08);stroke: #ff6b6b; stroke-width: 1; animation: tagBlink1 2.5s ease-in-out infinite 1.6s; }
+      @keyframes tagBlink1 {
+        0%, 100% { opacity: 0.6; }
+        50%       { opacity: 1; }
+      }
+
+      /* Cursor */
+      .cursor {
+        fill: #00d4ff;
+        animation: blink 1s step-end infinite;
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50%       { opacity: 0; }
+      }
+
+      /* Prompt */
+      .prompt { font-family: 'JetBrains Mono', monospace; font-size: 11px; }
+      .prompt-sym { fill: #39ff14; }
+      .prompt-txt { fill: #8b949e; }
+      .prompt-cmd { fill: #00d4ff; }
+
+      /* Side decorations */
+      .deco-line { stroke: #1a2332; stroke-width: 1; stroke-dasharray: 4,4; }
+      .deco-dot  { fill: #00d4ff; animation: dotPulse 2s ease-in-out infinite; }
+      .deco-dot2 { fill: #39ff14; animation: dotPulse 2s ease-in-out infinite 1s; }
+      @keyframes dotPulse {
+        0%, 100% { r: 3; opacity: 0.5; }
+        50%       { r: 5; opacity: 1; }
+      }
+    </style>
+
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#00d4ff"/>
+      <stop offset="50%"  stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#00d4ff"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0;-1 0" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowStrong" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="280" class="bg" rx="8"/>
+
+  <!-- Grid -->
+  <line x1="0" y1="70" x2="900" y2="70" class="grid-line"/>
+  <line x1="0" y1="140" x2="900" y2="140" class="grid-line"/>
+  <line x1="0" y1="210" x2="900" y2="210" class="grid-line"/>
+  <line x1="150" y1="0" x2="150" y2="280" class="grid-line"/>
+  <line x1="300" y1="0" x2="300" y2="280" class="grid-line"/>
+  <line x1="600" y1="0" x2="600" y2="280" class="grid-line"/>
+  <line x1="750" y1="0" x2="750" y2="280" class="grid-line"/>
+
+  <!-- Matrix rain columns -->
+  <text x="30"  class="matrix-col mc1">1 0 1 1 0 0 1 0 1 1 0 1 0 1 1 0</text>
+  <text x="70"  class="matrix-col mc2">A F 3 B 9 E 2 7 C 4 D 1 8 6 0 F</text>
+  <text x="820" class="matrix-col mc3">0 1 0 0 1 1 0 1 0 0 1 0 1 0 0 1</text>
+  <text x="855" class="matrix-col mc4">7 2 F A 3 E 8 1 B 5 C 0 9 4 D 6</text>
+  <text x="110" class="matrix-col mc5">$ # @ ! % ^ &amp; * ( ) _ + - = {</text>
+  <text x="878" class="matrix-col mc6">} | \ ; ' : " , . / ? &gt; &lt; `</text>
+  <text x="10"  class="matrix-col mc7">0 0 1 1 0 1 0 1 1 0 0 1 1 0 1 0</text>
+  <text x="875" class="matrix-col mc8">E B 4 7 A 2 9 F 0 C 5 3 1 D 8 6</text>
+  <text x="50"  class="matrix-col mc9">∑ π λ Ω δ ε β α γ θ μ φ ψ ρ σ τ</text>
+  <text x="843" class="matrix-col mc10">1 0 1 0 0 1 1 0 1 0 1 1 0 0 1 0</text>
+  <text x="130" class="matrix-col mc11">C 8 F 2 7 B 4 E 1 A 3 9 0 6 D 5</text>
+  <text x="862" class="matrix-col mc12">@ # ! $ % ^ * ( ) _ + - = { } |</text>
+
+  <!-- Scanline -->
+  <line x1="0" y1="0" x2="900" y2="0" class="scanline"/>
+
+  <!-- Borders -->
+  <line x1="0" y1="0" x2="900" y2="0" class="border-glow border-top"/>
+  <line x1="0" y1="279" x2="900" y2="279" class="border-glow border-bottom"/>
+
+  <!-- Corner brackets TL -->
+  <polyline points="20,8 8,8 8,30" class="corner"/>
+  <!-- Corner brackets TR -->
+  <polyline points="880,8 892,8 892,30" class="corner"/>
+  <!-- Corner brackets BL -->
+  <polyline points="20,272 8,272 8,250" class="corner-g"/>
+  <!-- Corner brackets BR -->
+  <polyline points="880,272 892,272 892,250" class="corner-g"/>
+
+  <!-- Top prompt bar -->
+  <rect x="0" y="0" width="900" height="22" fill="#0a1628" opacity="0.9"/>
+  <circle cx="18" cy="11" r="4" fill="#ff5f56"/>
+  <circle cx="32" cy="11" r="4" fill="#ffbd2e"/>
+  <circle cx="46" cy="11" r="4" fill="#27c93f"/>
+  <text x="65" y="15" class="prompt prompt-sym">┌──(</text>
+  <text x="95" y="15" class="prompt prompt-cmd">ahmet㉿kali</text>
+  <text x="173" y="15" class="prompt prompt-sym">)-[</text>
+  <text x="193" y="15" class="prompt prompt-txt">~/cybersec</text>
+  <text x="263" y="15" class="prompt prompt-sym">]</text>
+
+  <!-- Side deco dots -->
+  <circle cx="8" cy="100" class="deco-dot" r="3"/>
+  <circle cx="8" cy="140" class="deco-dot2" r="3"/>
+  <circle cx="8" cy="180" class="deco-dot" r="3"/>
+  <circle cx="892" cy="100" class="deco-dot2" r="3"/>
+  <circle cx="892" cy="140" class="deco-dot" r="3"/>
+  <circle cx="892" cy="180" class="deco-dot2" r="3"/>
+
+  <!-- Main Name -->
+  <text x="451" y="148" text-anchor="middle" class="name-shadow" dx="3" dy="3">AHMET DEMİR</text>
+  <text x="451" y="148" text-anchor="middle" class="name-text">AHMET DEMİR</text>
+
+  <!-- Subtitle -->
+  <text x="450" y="180" text-anchor="middle" class="subtitle">AI ENGINEER  ×  CYBERSECURITY RESEARCHER</text>
+
+  <!-- Tag pills -->
+  <rect x="195" y="200" width="110" height="22" rx="4" class="tag-box-ai"/>
+  <text x="250" y="215" text-anchor="middle" class="tag-ai">⚡ LLM ENGINEERING</text>
+
+  <rect x="320" y="200" width="130" height="22" rx="4" class="tag-box-sec"/>
+  <text x="385" y="215" text-anchor="middle" class="tag-sec">🛡️ ETHICAL HACKING</text>
+
+  <rect x="465" y="200" width="120" height="22" rx="4" class="tag-box-ctf"/>
+  <text x="525" y="215" text-anchor="middle" class="tag-ctf">🏴 CTF PLAYER</text>
+
+  <rect x="600" y="200" width="110" height="22" rx="4" class="tag-box-ai"/>
+  <text x="655" y="215" text-anchor="middle" class="tag-ai">🔐 SECURITY+</text>
+
+  <!-- Bottom prompt -->
+  <text x="20" y="255" class="prompt prompt-sym">└─$ </text>
+  <text x="52" y="255" class="prompt prompt-cmd">./run_exploit.sh --target all --stealth</text>
+  <rect x="368" y="243" width="8" height="14" class="cursor"/>
+</svg>

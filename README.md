@@ -1,12 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,30:0a1628,60:1a0a2e,100:0d1117&height=220&section=header&text=Ahmet%20Demir&fontSize=60&fontColor=00d4ff&animation=fadeIn&fontAlignY=38&desc=AI%20Engineer%20%7C%20Cybersecurity%20Researcher&descAlignY=58&descSize=18&descColor=39ff14" />
-
-</div>
-
-<div align="center">
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2800&pause=1200&color=00D4FF&center=true&vCenter=true&width=750&lines=🧠+Building+AI-Powered+Systems;🛡️+Offensive+Security+%26+Ethical+Hacking;🔐+CTF+Player+%7C+HackTheBox+%7C+TryHackMe;🤖+LLM+Engineering+%7C+Claude+%7C+OpenAI;⚡+Where+Artificial+Intelligence+meets+Security)](https://git.io/typing-svg)
+![banner](assets/banner.svg)
 
 </div>
 
@@ -14,29 +8,29 @@
 
 <div align="center">
 
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2500&pause=1200&color=00D4FF&center=true&vCenter=true&width=750&lines=🧠+Building+AI-Powered+Systems+with+LLMs;🛡️+Offensive+Security+%26+Ethical+Hacking;🔐+CTF+Player+%7C+HackTheBox+%7C+TryHackMe;🤖+Claude+%7C+OpenAI+%7C+Security+Automation;⚡+Where+Artificial+Intelligence+meets+Security)](https://git.io/typing-svg)
+
+</div>
+
+---
+
+<div align="center">
+
 ```
 ┌──(ahmet㉿kali)-[~]
-└─$ whoami
+└─$ cat about.txt
 
-  ╔═══════════════════════════════════════════════════════╗
-  ║  > cat profile.json                                   ║
-  ║                                                       ║
-  ║  {                                                    ║
-  ║    "name"     : "Ahmet Demir",                        ║
-  ║    "focus"    : ["AI Engineering", "Cybersecurity"],  ║
-  ║    "interests": ["LLMs", "Offensive Security",        ║
-  ║                  "CTF", "Security Research"],         ║
-  ║    "goal"     : "Where AI meets Cybersecurity"        ║
-  ║  }                                                    ║
-  ║                                                       ║
-  ╚═══════════════════════════════════════════════════════╝
+  > focus    : AI Engineering + Cybersecurity
+  > tools    : Python · Kali · Burp Suite · LLMs
+  > pursuing : Security+ · CEH · OSCP
+  > goal     : Where AI meets Offensive Security
 ```
 
 </div>
 
 ---
 
-## 🛡️ Cybersecurity
+## 🛡️ Cybersecurity Arsenal
 
 <div align="center">
 
@@ -47,7 +41,10 @@
 ![nmap](https://img.shields.io/badge/nmap-0E83CD?style=for-the-badge&logo=nmap&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
-**Pursuing:** ![Security+](https://img.shields.io/badge/CompTIA_Security%2B-FF0000?style=flat-square&logo=comptia&logoColor=white) ![CEH](https://img.shields.io/badge/CEH-In_Progress-orange?style=flat-square) ![OSCP](https://img.shields.io/badge/OSCP-Target-blue?style=flat-square)
+**Pursuing:**&nbsp;
+![Security+](https://img.shields.io/badge/CompTIA_Security%2B-FF0000?style=flat-square&logo=comptia&logoColor=white)
+![CEH](https://img.shields.io/badge/CEH-In_Progress-orange?style=flat-square)
+![OSCP](https://img.shields.io/badge/OSCP-Target_2025-blue?style=flat-square)
 
 </div>
 
